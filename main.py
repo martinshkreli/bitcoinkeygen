@@ -1,4 +1,6 @@
-from unicodedata import decimal
+#secp256k1 = y^2=x^3+7
+#y = pow(x, -1, p) -- modular multiplicative inverse y=invmod(x,p) such that x*y==1 (mod p)
+
 import numpy as np
 import hashlib as hashlib
 import base58 as base58
@@ -6,12 +8,10 @@ private = "L2unCh44WZdnhC3FSz6NXF26FPJgqkLjQJAg5pVXQKPPMKafeWr8"
 public = "1Lu4FppuLxLpVorSRPzFaB2SsbzaJohCfG"
 base58array = ['1','2','3','4','5','6','7','8','9','A','B', 'C', 'D', 'E','F','G','H','J','K','L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z','a','b','c','d','e','f','g','h','i','j','k','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 hexarray = ['0', '1','2','3','4','5','6','7','8','9','A','B', 'C', 'D', 'E','F']
-#secp256k1 = y^2=x^3+7
 p =  2 ** 256 - 2 ** 32 - 2 ** 9 - 2 ** 8 - 2 ** 7 - 2 ** 6 - 2 ** 4 - 1
 order =  115792089237316195423570985008687907852837564279074904382605163141518161494337
 genX = 55066263022277343669578718895168534326250603453777594175500187360389116729240
 genY = 32670510020758816978083085130507043184471273380659243275938904335757337482424
-#y = pow(x, -1, p) -- modular multiplicative inverse y=invmod(x,p) such that x*y==1 (mod p)
 
 def convertBase58toDecimal(x):    
     return base58array.index(x)
@@ -34,7 +34,6 @@ def hexToBase58(x):
         newsummand = base58value * 58**(len(x) - index - 1)
         base10 = base10 + newsummand
     return base10
-
 
 def mmi(x,p):
     return pow(x,-1,p)
@@ -77,7 +76,6 @@ print("private key H: ", privatekeyhex)
 hexedpubkeyx = (hex(pubkeyx)[2:])
 hexedpubkeyy = (hex(pubkeyy)[2:])
 convertedlastplace = int(hexedpubkeyy[-1], 16)
-
 appendcode = ""
 if convertedlastplace % 2 == 0: appendcode = "02"
 if convertedlastplace % 2 == 1: appendcode = "03"
@@ -96,3 +94,12 @@ fourBytes = secondHashObjectDecoded[:8]
 finalprivatekey = (privatekeyhex + fourBytes).upper()
 finalprivatekey = (base58.b58encode((bytes.fromhex(finalprivatekey))))
 print("WIF private key: ", finalprivatekey)
+
+pubhashobject = (hashlib.sha256(bytes.fromhex(publickeyhex)))
+firstpubhashedprivatekey = (pubhashobject.hexdigest())
+#ripemd160
+secondPubHashObjectDecoded = (secondPubHashObject.hexdigest())
+pubFourBytes = secondPubHashObjectDecoded[:8]
+finalpublickey = (publickeyhex + pubFourBytes).upper()
+finalpublickey = (base58.b58encode((bytes.fromhex(finalpublickey))))
+print("WIF public key: ", finalpublickey)
