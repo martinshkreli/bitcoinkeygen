@@ -84,10 +84,10 @@ def process_chunk(range_tuple):
     return (generated_keys, found_keys)
 
 def main():
-    start_val = 404800 * 1000
+    start_val = 1413800 * 1000
     end_val = start_val + 100000
     chunk_size = 100000 // 22  # Adjust this as needed
-    num_workers = 22
+    num_workers = None
 
     while True:
         logging.info(f"Generating keys from {start_val} to {end_val}")
@@ -110,7 +110,7 @@ def main():
         throughput = len(all_keys) / elapsed_time
         logging.info(f"Throughput: {throughput:.2f} keys/sec")
 
-        with open('privatekey9.csv', 'a') as f:
+        with open('privatekey.csv', 'a') as f:
             for key in all_keys:
                 f.write(f"{key[0]},{str(key[6])[2:-1]}\n")
                 
