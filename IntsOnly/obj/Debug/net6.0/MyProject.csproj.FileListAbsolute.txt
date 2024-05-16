@@ -1,0 +1,15 @@
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.csproj.AssemblyReference.cache
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.AssemblyInfoInputs.cache
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.AssemblyInfo.cs
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.csproj.CoreCompileInputs.cache
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/bin/Debug/net6.0/MyProject
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/bin/Debug/net6.0/MyProject.deps.json
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/bin/Debug/net6.0/MyProject.runtimeconfig.json
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/bin/Debug/net6.0/MyProject.dll
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/bin/Debug/net6.0/MyProject.pdb
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.dll
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/refint/MyProject.dll
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.pdb
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/MyProject.genruntimeconfig.cache
+/mnt/c/users/shkre/code/bitcoinkeygen/MyProject/obj/Debug/net6.0/ref/MyProject.dll

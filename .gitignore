@@ -2,3 +2,7 @@ list_data.py
 quickcheck.py
 *.csv
 maincopy.py
+myenv/
+nn.py
+test.ipynb
+trunc_csv.py
