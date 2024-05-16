@@ -62,7 +62,6 @@ class ECC
 
         Parallel.For(1, totalKeys + 1, num => {
             BigInteger[] result = Generate(num);
-            // Optionally process or store the result here
         });
 
         stopwatch.Stop();
