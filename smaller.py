@@ -33,6 +33,7 @@ def multiplypoint(k, genX, genY):
     resultX, resultY = 0, 0
     currentX, currentY = genX, genY
     while k > 0:
+        print(k)
         if k & 1:
             if resultX == 0 and resultY == 0:
                 resultX, resultY = currentX, currentY

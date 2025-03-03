@@ -6,3 +6,15 @@ myenv/
 nn.py
 test.ipynb
 trunc_csv.py
+data/
+dataAnalysis/
+bitcoin_keys
+comments.py
+hashlib.py
+hexconvert.py
+large_wallets.py
+smaller.py
+IntsOnly/
+IntsOnly/bin/
+IntsOnly/obj/
+IntsOnly/MyProject.csproj
