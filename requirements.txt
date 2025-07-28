@@ -1,2 +1,5 @@
-base58==2.1.1
-pycryptodome==3.10.1
+# Cryptography primitives (RIPEMD‑160 implementation)
+pycryptodome>=3.20
+
+# Human‑readable Base58 / Base58Check encoder‑decoder
+base58>=2.1
